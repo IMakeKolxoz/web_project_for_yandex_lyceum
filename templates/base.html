@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ru" style="">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?семья=Монтсеррат:итал,wght@0,600;1,400&display=swap" rel="таблица стилей">
+    <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>{% block title%}{% endblock%}</title>
+</head>
+<body style="background: #5f2c82;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #49a09d, #5f2c82);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #49a09d, #5f2c82); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+">
+<div  class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3  border-bottom shadow-sm "
+     wfd-id="49">
+    <h5 class="my-0 mr-md-auto font-weight-normal " style="color: #fff; font-weight: 900; font-family: 'Montserrat', sans-serif;">DPFYL Company</h5>
+    <nav class="my-2 my-md-0 mr-md-3">
+        <a class="   text-white" style="font-family: 'Montserrat', sans-serif; font-weight: 700;" href="/">Главная страница</a>
+        <a class="p-2 text-white" style="font-family: 'Montserrat', sans-serif; font-weight: 700;" href="/about">О нас</a>
+		<a class="p-2 text-white" style="font-family: 'Montserrat', sans-serif; font-weight: 700;" href="/posts">Все статьи</a>
+        <a class="p-2 text-white" style="font-family: 'Montserrat', sans-serif; font-weight: 700;" href="/projects">Проекты</a>
+        <a class="p-2 text-white" style="font-family: 'Montserrat', sans-serif; font-weight: 700;" href="/game">Игры</a>
+        <a class="btn btn-warning" style="font-family: 'Montserrat', sans-serif; font-weight: 700; color" href="/create-article">Создание статьи</a>
+    </nav>
+    <a class="btn btn-outline-primary" href="#">Sign up</a>
+</div>
+{% block body%}{% endblock%}
+
+<footer class="container pt-4 my-md-5 pt-md-5 border-top">
+    <div class="row" wfd-id="1">
+        <div class="col-12 col-md" wfd-id="22">
+            <small class="d-block mb-3 text-muted">© 2020-2021</small>
+        </div>
+        <div class="col-6 col-md" wfd-id="14">
+            <h5 style="font-family: 'Montserrat', sans-serif; font-weight: 900; color: #fff"  >Features</h5>
+            <ul class="list-unstyled text-small" wfd-id="15">
+                <li wfd-id="21"><a class="" style="font-family: 'Montserrat', sans-serif; font-weight: 700;  color: #fff;" href="#">Cool stuff</a></li>
+                <li wfd-id="20"><a class="" style="font-family: 'Montserrat', sans-serif; font-weight: 700; color: #fff; " href="#">Random feature</a></li>
+                <li wfd-id="19"><a class="" style="font-family: 'Montserrat', sans-serif; font-weight: 700;  color: #fff;" href="#">Team feature</a></li>
+                <li wfd-id="18"><a class="" style="font-family: 'Montserrat', sans-serif; font-weight: 700;  color: #fff;" href="#">Stuff for developers</a></li>
+                <li wfd-id="17"><a class="" style="font-family: 'Montserrat', sans-serif; font-weight: 700;  color: #fff;" href="#">Another one</a></li>
+                <li wfd-id="16"><a class="" style="font-family: 'Montserrat', sans-serif; font-weight: 700 ; color: #fff;" href="#">Last time</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md" wfd-id="8">
+            <h5 style="font-family: 'Montserrat', sans-serif; font-weight: 900; color: #fff">Resources</h5>
+            <ul class="list-unstyled text-small" wfd-id="9">
+                <li wfd-id="13"><a class="" style="font-family: 'Montserrat', sans-serif; font-weight: 700; color: #fff;" href="#">Resource</a></li>
+                <li wfd-id="12"><a class="" style="font-family: 'Montserrat', sans-serif; font-weight: 700; color: #fff;" href="#">Resource name</a></li>
+                <li wfd-id="11"><a class="" style="font-family: 'Montserrat', sans-serif; font-weight: 700; color: #fff;" href="#">Another resource</a></li>
+                <li wfd-id="10"><a class="" style="font-family: 'Montserrat', sans-serif; font-weight: 700; color: #fff;" href="#">Final resource</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-md" wfd-id="2">
+            <h5 style="font-family: 'Montserrat', sans-serif; font-weight: 900; color: #fff">About</h5>
+            <ul class="list-unstyled text-small" wfd-id="3">
+                <li wfd-id="7"><a class="" style="font-family: 'Montserrat', sans-serif; font-weight: 700; color: #fff;" href="#">Team</a></li>
+                <li wfd-id="6"><a class="" style="font-family: 'Montserrat', sans-serif; font-weight: 700; color: #fff;" href="#">Locations</a></li>
+                <li wfd-id="5"><a class="" style="font-family: 'Montserrat', sans-serif; font-weight: 700; color: #fff;" href="#">Privacy</a></li>
+                <li wfd-id="4"><a class="" style="font-family: 'Montserrat', sans-serif; font-weight: 700; color: #fff;" href="#">Terms</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

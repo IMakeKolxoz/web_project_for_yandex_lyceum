@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block title %}
+Игры
+{% endblock %}
+
+{% block body %}
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="check" viewBox="0 0 16 16">
+        <title>Check</title>
+        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
+    </symbol>
+</svg>
+
+<div class="container py-3" wfd-id="0">
+    <main>
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center" wfd-id="24">
+            <div class="col" wfd-id="43">
+                <div class="card mb-4 rounded-3 shadow-sm" wfd-id="44">
+                    <div class="card-header py-3" wfd-id="51">
+                        <h4 class="my-0 fw-normal">Игра 2048</h4>
+                    </div>
+                    <div class="card-body" wfd-id="45">
+                        <ul class="list-unstyled mt-3 mb-4" wfd-id="46">
+                            <li wfd-id="50">Квадратное игровое поле состоит из 16 передвижных плиток по 4 в каждом ряду.
+                                В начале игры открыты две плитки с цифрами 2 и 4 в любом их сочетании. Как в старых
+                                русских пятнашках, костяшки можно перемещать влево-вправо, вверх и вниз, но двигаются
+                                они не по одной, а блоком. Когда плитки с одинаковыми цифрами сталкиваются, их номинал
+                                суммируется, и таким образом формируются крупные числа.
+                            </li>
+                        </ul>
+                        <a class="w-100 btn btn-lg btn-outline-primary" href="/game/2048">Играть</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col" wfd-id="34">
+                <div class="card mb-4 rounded-3 shadow-sm" wfd-id="35">
+                    <div class="card-header py-3" wfd-id="42">
+                        <h4 class="my-0 fw-normal">Тетрис</h4>
+                    </div>
+                    <div class="card-body" wfd-id="36">
+                        <ul class="list-unstyled mt-3 mb-4" wfd-id="37">
+                            <li wfd-id="41">20 users included</li>
+                        </ul>
+                        <a class="w-100 btn btn-lg btn-outline-primary" href="/game/tetris">Играть</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+{% endblock %}
