@@ -36,6 +36,11 @@ def projects():
     return render_template("projects.html")
 
 
+@app.route('/team')
+def team():
+    return render_template("team.html")
+
+
 @app.route('/posts')
 def posts():
     articles = Article.query.order_by(Article.date.desc()).all()
