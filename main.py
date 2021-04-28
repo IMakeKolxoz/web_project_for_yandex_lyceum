@@ -30,10 +30,14 @@ def about():
     return render_template("about.html")
 
 
-
 @app.route('/projects')
 def projects():
     return render_template("projects.html")
+
+
+@app.route('/discussion')
+def discussion():
+    return render_template("discussion.html")
 
 
 @app.route('/team')
@@ -109,4 +113,4 @@ def game():
 
 
 if __name__ == '__main__':
-    app.run(port='8080', host='127.0.0.1')
+    app.run(port='8081', host='127.0.0.2')
