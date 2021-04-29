@@ -19,3 +19,7 @@ cd into the folder it is downloaded and run
 ```
 python main.py
 ```
+site:
+```
+http://imakekolxoz.pythonanywhere.com/
+```
